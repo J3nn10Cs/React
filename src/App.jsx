@@ -19,7 +19,7 @@ function App() {
 
   //Si criptos aun no existe
   if(!criptos)
-    return <span> Cargando ...</span>
+    return <span> Cargando ....</span>
 
   return (
     <>
