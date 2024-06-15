@@ -1,0 +1,60 @@
+tml{
+    font-size: 62.5%;
+    box-sizing: border-box; /*hack para box model*/
+    background-image: linear-gradient(to top, var(--gris-claro) 0%, var(--blanco) 100%);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;/*1 rem = 10px*/
+    font-family: "Comic Sans MS";
+    background: rgb(0, 15, 22);
+    background: linear-gradient(#0f0c29, #302b63,#24243e);
+    
+}
+.nombre, .precio{
+    margin: 0;
+    color: aliceblue;
+}
+.titulo{
+    text-align: center;
+    grid-column: 1/4;
+    color: azure;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.contenedor{
+    border: 2px solid skyblue;
+    border-right: 2rem solid skyblue;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width:820px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        max-width: 1400px;
+        padding: 2rem;
+    }
+    .contenedor{
+        margin: 0;
+    }
+}
+
+.positivo{
+    color: greenyellow;
+    margin: 0
+}
+
+.negativo{
+    color: red;
+    margin: 0;
+}
